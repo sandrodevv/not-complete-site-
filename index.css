@@ -1,0 +1,363 @@
+html {
+  scroll-behavior: smooth;
+}
+
+section .carouselBoot .carousel .carousel-item {
+  transition: 3s;
+}
+
+main {
+  height: 2400px;
+}
+@media screen and (max-width: 1290px) {
+  main {
+    overflow: hidden;
+  }
+}
+main .projectH1 {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main .projectH1 h1 {
+  font-family: Montserrat;
+  font-size: 31px;
+}
+main .projectH1 p {
+  font-family: Montserrat;
+  margin-bottom: 0px;
+}
+main .projectH1 .projectP1 {
+  font-size: 65px;
+  letter-spacing: 7px;
+}
+main .projectH1 .projectP2 {
+  font-size: 15px;
+  letter-spacing: 9px;
+}
+main .projectPicturesOne {
+  display: none;
+  position: absolute;
+  background-color: rgba(212, 189, 189, 0.411);
+  height: auto;
+  top: -87px;
+  left: -118px;
+  width: 258%;
+  flex-direction: column;
+  align-items: center;
+}
+main .projectPicturesOne .closebutton {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+main .projectPicturesOne .constImages .renderimg {
+  height: 783px;
+  width: 1278px;
+}
+main .apartamentBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .apartamentBox input {
+  display: none;
+}
+main .apartamentBox .couples .box {
+  position: relative;
+  width: 495px;
+  height: 500px;
+}
+main .apartamentBox .couples .box-contents {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(photos/49-Photoroom.png) 50% 50%/cover no-repeat;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  transition: 0.5s ease;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+main .apartamentBox .couples .box-contents p {
+  font-family: Montserrat;
+  font-size: 22px;
+}
+main .apartamentBox .couples .second {
+  background: url(photos/57.png) 50% 50%/cover no-repeat;
+}
+main .apartamentBox .couples .third {
+  background: url(photos/72.png) 50% 50%/cover no-repeat;
+}
+main .apartamentBox .couples .fourth {
+  background: url(photos/86.png) 50% 50%/cover no-repeat;
+}
+main .apartamentBox .couples .fifth {
+  background: url(photos/101.png) 50% 50%/cover no-repeat;
+}
+main .apartamentBox .couples .sixth {
+  background: url(photos/131.png) 50% 50%/cover no-repeat;
+}
+main .apartamentBox .couples .hover-point {
+  position: absolute;
+  z-index: 2;
+  width: 33.3333333333%;
+  height: 33.3333333333%;
+}
+main .apartamentBox .couples .hover-point:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+main .apartamentBox .couples .hover-point:nth-child(2) {
+  top: 0;
+  left: 33.3333333333%;
+}
+main .apartamentBox .couples .hover-point:nth-child(3) {
+  top: 0;
+  right: 0;
+}
+main .apartamentBox .couples .hover-point:nth-child(4) {
+  top: 33.3333333333%;
+  left: 0;
+}
+main .apartamentBox .couples .hover-point:nth-child(5) {
+  top: 33.3333333333%;
+  right: 0;
+}
+main .apartamentBox .couples .hover-point:nth-child(6) {
+  bottom: 0;
+  left: 0;
+}
+main .apartamentBox .couples .hover-point:nth-child(7) {
+  bottom: 0;
+  left: 33.3333333333%;
+}
+main .apartamentBox .couples .hover-point:nth-child(8) {
+  bottom: 0;
+  right: 0;
+}
+main .apartamentBox .couples .hover-point:nth-child(1):hover ~ .box-contents {
+  box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.3);
+  transform-origin: right top;
+  transform: perspective(1000px) rotateX(10deg) rotateY(-10deg) rotateZ(2deg);
+}
+main .apartamentBox .couples .hover-point:nth-child(2):hover ~ .box-contents {
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+  transform-origin: center top;
+  transform: perspective(1000px) rotateX(10deg);
+}
+main .apartamentBox .couples .hover-point:nth-child(3):hover ~ .box-contents {
+  box-shadow: -15px 15px 50px rgba(0, 0, 0, 0.3);
+  transform-origin: left top;
+  transform: perspective(1000px) rotateX(10deg) rotateY(10deg) rotateZ(-2deg);
+}
+main .apartamentBox .couples .hover-point:nth-child(4):hover ~ .box-contents {
+  box-shadow: 15px 5px 50px rgba(0, 0, 0, 0.3);
+  transform-origin: left center;
+  transform: perspective(1000px) rotateY(-10deg);
+}
+main .apartamentBox .couples .hover-point:nth-child(5):hover ~ .box-contents {
+  box-shadow: -15px 5px 50px rgba(0, 0, 0, 0.3);
+  transform-origin: right center;
+  transform: perspective(1000px) rotateY(10deg);
+}
+main .apartamentBox .couples .hover-point:nth-child(6):hover ~ .box-contents {
+  box-shadow: 15px -15px 50px rgba(0, 0, 0, 0.3);
+  transform-origin: right bottom;
+  transform: perspective(1000px) rotateX(-10deg) rotateY(-10deg) rotateZ(-2deg);
+}
+main .apartamentBox .couples .hover-point:nth-child(7):hover ~ .box-contents {
+  box-shadow: 0 -15px 50px rgba(0, 0, 0, 0.3);
+  transform-origin: center bottom;
+  transform: perspective(1000px) rotateX(-10deg);
+}
+main .apartamentBox .couples .hover-point:nth-child(8):hover ~ .box-contents {
+  box-shadow: -15px -15px 50px rgba(0, 0, 0, 0.3);
+  transform-origin: left bottom;
+  transform: perspective(1000px) rotateX(-10deg) rotateY(10deg) rotateZ(2deg);
+}
+main .apartamentBox .right {
+  padding-top: 170px;
+}
+main .apartamentBox .firstCouple {
+  display: flex;
+  gap: 80px;
+}
+main .apartamentBox .secondCouple {
+  display: flex;
+  gap: 80px;
+}
+main .apartamentBox .thirdCouple {
+  display: flex;
+  gap: 80px;
+}
+main .apartamentBox .apartamentBoxes {
+  transition-duration: 1.5s !important;
+}
+main .apartamentBox .apartamentBoxes img {
+  height: 500px;
+  border-radius: 12px;
+}
+
+@media screen and (max-width: 1100px) {
+  main {
+    height: auto !important;
+  }
+  .couples {
+    flex-direction: column;
+    margin-bottom: 140px;
+    gap: 0px !important;
+  }
+}
+@media screen and (max-width: 815px) {
+  main .projectH1 h1 {
+    font-size: 23px;
+  }
+  main .projectH1 .projectP1 {
+    font-size: 45px;
+    letter-spacing: 10px;
+  }
+  main .projectH1 .projectP2 {
+    font-size: 11px;
+    letter-spacing: 11px;
+  }
+}
+@media screen and (max-width: 615px) {
+  main .projectH1 h1 {
+    font-size: 18px;
+  }
+  main .projectH1 .projectP1 {
+    font-size: 38px;
+    letter-spacing: 13px;
+  }
+  main .projectH1 .projectP2 {
+    font-size: 10px;
+    letter-spacing: 13px;
+  }
+}
+@media screen and (max-width: 580px) {
+  main .apartamentBox .couples .box {
+    width: 441px;
+    height: 415px;
+  }
+}
+@media screen and (max-width: 480px) {
+  main .projectH1 h1 {
+    font-size: 17px;
+  }
+  main .projectH1 .projectP1 {
+    font-size: 36px;
+  }
+  main .projectH1 .projectP2 {
+    font-size: 10px;
+    letter-spacing: 11px;
+  }
+}
+@media screen and (max-width: 470px) {
+  main .apartamentBox .couples .box {
+    width: 425px;
+    height: 407px;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .apartamentBox .couples .box {
+    width: 408px;
+    height: 399px;
+  }
+}
+@media screen and (max-width: 445px) {
+  main .projectH1 h1 {
+    font-size: 16px;
+  }
+  main .projectH1 .projectP1 {
+    font-size: 35px;
+  }
+  main .projectH1 .projectP2 {
+    font-size: 10px;
+    letter-spacing: 10px;
+  }
+}
+@media screen and (max-width: 432px) {
+  main .apartamentBox .couples .box {
+    width: 393px;
+    height: 410px;
+  }
+}
+@media screen and (max-width: 420px) {
+  main .projectH1 h1 {
+    font-size: 15px;
+  }
+  main .projectH1 .projectP1 {
+    font-size: 34px;
+  }
+  main .projectH1 .projectP2 {
+    font-size: 9px;
+    letter-spacing: 10px;
+  }
+}
+@media screen and (max-width: 410px) {
+  main .apartamentBox .couples .box {
+    width: 373px;
+    height: 394px;
+  }
+}
+@media screen and (max-width: 400px) {
+  main .projectH1 h1 {
+    font-size: 14px;
+  }
+  main .projectH1 .projectP1 {
+    font-size: 31px;
+    letter-spacing: 14px;
+  }
+  main .projectH1 .projectP2 {
+    font-size: 9px;
+    letter-spacing: 10px;
+  }
+}
+@media screen and (max-width: 395px) {
+  main .apartamentBox .couples .box {
+    width: 363px;
+    height: 386px;
+  }
+}
+@media screen and (max-width: 370px) {
+  main .projectH1 h1 {
+    font-size: 13px;
+  }
+  main .projectH1 .projectP1 {
+    font-size: 28px;
+    letter-spacing: 14px;
+  }
+  main .projectH1 .projectP2 {
+    font-size: 9px;
+    letter-spacing: 9px;
+  }
+}
+@media screen and (max-width: 381px) {
+  main .apartamentBox .couples .box {
+    width: 355px;
+    height: 377px;
+  }
+}
+@media screen and (max-width: 381px) {
+  main .apartamentBox .couples .box {
+    width: 355px;
+    height: 377px;
+  }
+}
+@media screen and (max-width: 368px) {
+  main .apartamentBox .couples .box {
+    width: 335px;
+    height: 355px;
+  }
+}
+@media screen and (max-width: 36px) {
+  main .apartamentBox .couples .box {
+    width: 345px;
+    height: 368px;
+  }
+}/*# sourceMappingURL=index.css.map */
